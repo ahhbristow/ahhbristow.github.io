@@ -1,35 +1,45 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
- 		<script src="https://code.jquery.com/jquery-1.11.0.js"></script>
- 		<script src="time_tracker.js"></script>
-		<link rel="stylesheet" type="text/css" href="theme_2.css">
-		<link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-	</head>
 
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Ahhbristow.github.io : Hosting repository" />
 
-	<body>
-		<script type="text/javascript">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-			function test_time_tracker(persistence_layer) {
-				persistence_layer.set_value('tt|project|0', 'Project 1|16_10_2013|0.75');
-				persistence_layer.set_value('tt|project|1', 'Project 2|18_10_2013|0.75');
-				persistence_layer.set_value('tt|project|2', 'Project 3|16_10_2013|0.75');
-				persistence_layer.set_value('tt|project|3', 'Project 4|16_10_2013|0.75');
-				persistence_layer.set_value('tt|project|4', 'Project 5|17_10_2013|0.75');
-				persistence_layer.set_value('tt|project|5', 'Project 6|17_10_2013|0.75');
-				persistence_layer.set_value('tt|project|6', 'Project 7|17_10_2013|0.75');
-			}
+    <title>Ahhbristow.github.io</title>
+  </head>
 
-			$(document).ready(function() {
-				var use_local_storage = 1;
-				document.persistence_layer = new PersistenceLayer(use_local_storage);
+  <body>
 
-				//test_time_tracker(document.persistence_layer);
-				document.time_tracker = new TimeTracker();	
-			});
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/ahhbristow">View on GitHub</a>
 
-		</script>
-		<div id="time_tracker"></div>
-	</body>
+          <h1 id="project_title">Ahhbristow.github.io</h1>
+          <h2 id="project_tagline">Hosting repository</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="this-is-a-test-page" class="anchor" href="#this-is-a-test-page"><span class="octicon octicon-link"></span></a>This is a test page</h1>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
 </html>
